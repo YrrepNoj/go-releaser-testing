@@ -15,13 +15,18 @@ builds:
       - darwin
     dir: src
 
+# This creates a combined amd/arm binary for mac (while keeping the original two binaries)
 universal_binaries:
-  id: {{ .ProjectName }}
+  - replace: false
+
 
 archives:
-  - replacements:
+
+  - 
+    format: binary 
+    replacements:
       darwin: Darwin
-      linux: Linux
+      linux: Linuxxxx
       windows: Windows
       386: i386
       amd64: x86_64
