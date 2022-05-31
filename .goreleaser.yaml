@@ -44,3 +44,12 @@ release:
   mode: append
   header: |
     This is part of the header..
+
+brews:
+  -
+    tap:
+      owner: yrrepnoj
+      name: homebrew-yrrepnoj 
+
+    homepage: https://twitter.com/YrrepNoj
+    description: "Testing out uploading a brew forumla to a public tap"
