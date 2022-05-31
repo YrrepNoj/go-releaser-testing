@@ -21,12 +21,11 @@ universal_binaries:
 
 
 archives:
-
   - 
     format: binary 
     replacements:
       darwin: Darwin
-      linux: Linuxxxx
+      linux: Linux
       windows: Windows
       386: i386
       amd64: x86_64
@@ -40,3 +39,8 @@ changelog:
     exclude:
       - '^docs:'
       - '^test:'
+release:
+  prerelease: auto
+  mode: append
+  header: |
+    This is part of the header..
