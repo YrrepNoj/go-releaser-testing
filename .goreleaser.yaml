@@ -15,6 +15,9 @@ builds:
       - darwin
     dir: src
 
+universal_binaries:
+  id: {{ .ProjectName }}
+
 archives:
   - replacements:
       darwin: Darwin
